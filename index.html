@@ -1,1 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordyn Check-In Alert - ZIP Launchpad</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #E2E7FD;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #263051 0%, #394260 100%);
+            color: #E2E7FD;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 300;
+        }
+        .header .subtitle {
+            margin-top: 8px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        .alert-summary {
+            background-color: #fff3e6;
+            border-left: 5px solid #ff8800;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+        .alert-summary h2 {
+            margin-top: 0;
+            color: #cc6600;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            background-color: #C5CBEB;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 32px;
+            font-weight: bold;
+            color: #263051;
+        }
+        .stat-label {
+            font-size: 14px;
+            color: #394260;
+            margin-top: 5px;
+        }
+        .founder-card {
+            border-left: 4px solid #ff4444;
+            margin: 15px 20px;
+            padding: 15px;
+            background-color: #ffe6e6;
+            border-radius: 5px;
+        }
+        .founder-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #263051;
+            margin-bottom: 5px;
+        }
+        .startup-name {
+            font-size: 16px;
+            color: #3957A6;
+            margin-bottom: 10px;
+        }
+        .last-checkin {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .days-ago {
+            background-color: #ff4444;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        .status-note {
+            font-size: 13px;
+            color: #666;
+            font-style: italic;
+            margin-top: 5px;
+        }
+        .critical {
+            border-left-color: #cc0000;
+            background-color: #ffe0e0;
+        }
+        .action-section {
+            background-color: #263051;
+            color: #E2E7FD;
+            padding: 25px;
+            margin-top: 20px;
+        }
+        .action-section h2 {
+            margin-top: 0;
+            color: #C5CBEB;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔔 ZIP Launchpad Check-In Alert</h1>
+            <div class="subtitle">Founders Needing Follow-Up | Generated October 21, 2025</div>
+        </div>
 
+        <div class="alert-summary">
+            <h2>⚠️ Action Required</h2>
+            <p>The following founders have not checked in for <strong>14+ days</strong> and may need encouragement to re-engage with their LaunchMate coaching agents.</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">7</div>
+                <div class="stat-label">Founders Needing Follow-Up</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1</div>
+                <div class="stat-label">Critical (8+ weeks)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Inactive (2-7 weeks)</div>
+            </div>
+        </div>
+
+        <!-- CRITICAL CASES -->
+        <div style="margin: 20px;">
+            <h3 style="color: #cc0000; margin-left: 5px;">🚨 CRITICAL - 8+ Weeks Without Contact</h3>
+            
+            <div class="founder-card critical">
+                <div class="founder-name">Daniel</div>
+                <div class="startup-name">Second Course (Food Insecurity Platform)</div>
+                <div class="last-checkin">
+                    Last Check-In: <strong>July 29, 2025</strong> 
+                    <span class="days-ago">84+ DAYS AGO</span>
+                </div>
+                <div class="status-note">
+                    Last activity: Completed beta platform, was entering beta testing phase with campus stakeholders. 
+                    Had strong momentum and clear roadmap. Critical re-engagement needed.
+                </div>
+            </div>
+        </div>
+
+        <!-- INACTIVE CASES -->
+        <div style="margin: 20px;">
+            <h3 style="color: #ff8800; margin-left: 5px;">⏰ INACTIVE - 2-7 Weeks Since Last Check-In</h3>
+            
+            <div class="founder-card">
+                <div class="founder-name">Kanna</div>
+                <div class="startup-name">ASAICHI (Sustainable Flower Base)</div>
+                <div class="last-checkin">
+                    Last Check-In: <strong>August 29, 2025</strong> 
+                    <span class="days-ago">53 days ago</span>
+                </div>
+                <div class="status-note">
+                    Last activity: Won 1st place in ZIP cohort review, working on prototyping and manufacturer relationships. 
+                    Had high momentum.
+                </div>
+            </div>
+
+            <div class="founder-card">
+                <div class="founder-name">Thaddeus (Holland)</div>
+                <div class="startup-name">The T-Squeeze</div>
+                <div class="last-checkin">
+                    Last Check-In: <strong>August 29, 2025</strong> 
+                    <span class="days-ago">53 days ago</span>
+                </div>
+                <div class="status-note">
+                    Last activity: First in-person meeting with partner, partnership structure clarified. 
+                    Was seeking prototype funding.
+                </div>
+            </div>
+
+            <div class="founder-card">
+                <div class="founder-name">Joshua</div>
+                <div class="startup-name">Cram AI</div>
+                <div class="last-checkin">
+                    Last Check-In: <strong>August 30, 2025 (incomplete)</strong> 
+                    <span class="days-ago">52 days ago</span>
+                </div>
+                <div class="status-note">
+                    Last activity: Started check-in but pivoted to asking for ZIP resource guidance. 
+                    Rebuilding platform after previous retention issues. Needs structured momentum assessment.
+                </div>
+            </div>
+
+            <div class="founder-card">
+                <div class="founder-name">Wayne</div>
+                <div class="startup-name">Protocol Grip Trainer</div>
+                <div class="last-checkin">
+                    Last Check-In: <strong>September 4, 2025 (incomplete)</strong> 
+                    <span class="days-ago">47 days ago</span>
+                </div>
+                <div class="status-note">
+                    Last activity: Mailed devices to potential team members, connected with Sammie for manufacturing insights. 
+                    Had strong momentum but incomplete check-in.
+                </div>
+            </div>
+
+            <div class="founder-card">
+                <div class="founder-name">Sky</div>
+                <div class="startup-name">SipSecure (Auto-Seal Lid for Canned Beverages)</div>
+                <div class="last-checkin">
+                    Last Check-In: <strong>September 19, 2025 (incomplete)</strong> 
+                    <span class="days-ago">32+ days ago</span>
+                </div>
+                <div class="status-note">
+                    Last activity: Started production of preorders, fixed design flaw, created promo video. 
+                    3D printer inconsistency issues. Non-responsive for 3+ weeks after starting check-in.
+                </div>
+            </div>
+
+            <div class="founder-card">
+                <div class="founder-name">Arshia</div>
+                <div class="startup-name">Ashter (Robotic Dog Waste Collection)</div>
+                <div class="last-checkin">
+                    Last Check-In: <strong>Incomplete - No formal check-in</strong> 
+                    <span class="days-ago">Status Unknown</span>
+                </div>
+                <div class="status-note">
+                    Last activity: Started customer persona work but never completed. 
+                    Needs to transition from planning to customer interviews. Requires structured accountability.
+                </div>
+            </div>
+        </div>
+
+        <div class="action-section">
+            <h2>📋 Recommended Actions for Jordyn</h2>
+            <ul>
+                <li><strong>Priority 1 - Daniel (Second Course):</strong> Immediate outreach needed. 84+ days since last contact during critical beta testing phase.</li>
+                <li><strong>Priority 2 - Kanna & Thaddeus:</strong> Both at 53 days. Had strong momentum; quick check-in could re-engage.</li>
+                <li><strong>Priority 3 - Joshua, Wayne, Sky:</strong> 32-52 days. All had incomplete check-ins or needed structured follow-up.</li>
+                <li><strong>Priority 4 - Arshia:</strong> Never completed formal check-in. May need different engagement approach.</li>
+            </ul>
+            
+            <p style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #394260;">
+                <strong>Suggested Message Template:</strong> "Hi [Name]! Just checking in - I noticed it's been a while since your last LaunchMate check-in. How's [Startup Name] going? Your agent is ready to help with momentum whenever you're ready to reconnect! 🚀"
+            </p>
+        </div>
+
+        <div class="footer">
+            Generated by LaunchMate Jordyn Alert System | ZIP Launchpad<br>
+            Last Updated: October 21, 2025
+        </div>
+    </div>
+</body>
+</html>
