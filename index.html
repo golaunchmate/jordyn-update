@@ -86,43 +86,43 @@
             color: #0066cc;
             border-color: #0066cc;
         }
-        .founder-card {
+        .team-card {
             margin-bottom: 12px;
             border-radius: 8px;
             overflow: hidden;
             transition: box-shadow 0.2s;
         }
-        .founder-card:hover {
+        .team-card:hover {
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-        .critical .founder-card {
+        .critical .team-card {
             border-left: 4px solid #cc0000;
             background-color: #fff5f5;
         }
-        .high .founder-card {
+        .high .team-card {
             border-left: 4px solid #ff6600;
             background-color: #fff8f0;
         }
-        .moderate .founder-card {
+        .moderate .team-card {
             border-left: 4px solid #0066cc;
             background-color: #f0f5ff;
         }
-        .founder-header {
+        .team-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 12px 15px;
             cursor: pointer;
         }
-        .founder-info {
+        .team-info {
             flex: 1;
         }
-        .founder-name {
+        .team-name {
             font-weight: bold;
             color: #263051;
-            font-size: 15px;
+            font-size: 16px;
         }
-        .startup-name {
+        .team-members {
             color: #666;
             font-size: 13px;
             margin-top: 2px;
@@ -134,20 +134,24 @@
         .last-check-in {
             font-size: 13px;
             color: #394260;
+            margin-bottom: 5px;
         }
-        .days-since {
-            font-size: 16px;
+        .days-badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 14px;
             font-weight: bold;
-            margin-top: 3px;
+            color: white;
         }
-        .critical .days-since {
-            color: #cc0000;
+        .critical .days-badge {
+            background-color: #cc0000;
         }
-        .high .days-since {
-            color: #ff6600;
+        .high .days-badge {
+            background-color: #ff6600;
         }
-        .moderate .days-since {
-            color: #0066cc;
+        .moderate .days-badge {
+            background-color: #0066cc;
         }
         .status-summary {
             padding: 0 15px 12px 15px;
@@ -175,24 +179,24 @@
     <div class="container">
         <div class="header">
             <h1>🔔 Check-In Alert System</h1>
-            <div class="subtitle">Founders who haven't used LaunchMate in 7+ days | Updated October 28, 2025</div>
+            <div class="subtitle">Teams who haven't used LaunchMate in 7+ days | Updated October 28, 2025</div>
         </div>
 
         <div class="stats-bar">
             <div class="stat-item">
-                <div class="stat-number">17</div>
-                <div class="stat-label">Need Follow-Up</div>
+                <div class="stat-number">14</div>
+                <div class="stat-label">Teams Need Follow-Up</div>
             </div>
             <div class="stat-item">
                 <div class="stat-number">4</div>
                 <div class="stat-label">Critical (60+ days)</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">8</div>
+                <div class="stat-number">6</div>
                 <div class="stat-label">High Priority (30-59 days)</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">5</div>
+                <div class="stat-number">4</div>
                 <div class="stat-label">Moderate (7-29 days)</div>
             </div>
         </div>
@@ -202,47 +206,47 @@
             <div class="priority-section critical">
                 <div class="priority-header priority-critical">🚨 Critical Priority (60+ Days)</div>
                 
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Daniel</div>
-                            <div class="startup-name">Second Course</div>
+                <div class="team-card">
+                    <div class="team-header">
+                        <div class="team-info">
+                            <div class="team-name">Second Course</div>
+                            <div class="team-members">Daniel, Gavin</div>
                         </div>
                         <div class="check-in-info">
                             <div class="last-check-in">July 29, 2025</div>
-                            <div class="days-since">87 days ago</div>
+                            <span class="days-badge">87 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Built prototype, conducting stakeholder validation with students/restaurants. Was preparing beta testing with ZIP students. Needs university partnership guidance and campus food service connections.
+                        <span class="status-label">Last Status:</span> Daniel built prototype and conducted stakeholder validation with students/restaurants for food insecurity platform. Was preparing beta testing with ZIP students. Gavin secured 40 student ambassadors, working on website refinements and restaurant partnerships. Team needs university partnership guidance and campus food service connections.
                     </div>
                 </div>
 
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Thaddeus</div>
-                            <div class="startup-name">The T-Squeeze</div>
+                <div class="team-card">
+                    <div class="team-header">
+                        <div class="team-info">
+                            <div class="team-name">The T-Squeeze</div>
+                            <div class="team-members">Thaddeus, Holland</div>
                         </div>
                         <div class="check-in-info">
                             <div class="last-check-in">August 29, 2025</div>
-                            <div class="days-since">56 days ago</div>
+                            <span class="days-badge">60 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Partnership structure clarified with Holland. Focused on prototype funding but needs guidance on user validation before building. Positive and proactive energy.
+                        <span class="status-label">Last Status:</span> Partnership structure clarified between Thaddeus and Holland. Team focused on prototype funding but needs guidance on user validation before building. Positive and proactive energy overall.
                     </div>
                 </div>
 
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Kanna</div>
-                            <div class="startup-name">ASAICHI</div>
+                <div class="team-card">
+                    <div class="team-header">
+                        <div class="team-info">
+                            <div class="team-name">ASAICHI</div>
+                            <div class="team-members">Kanna</div>
                         </div>
                         <div class="check-in-info">
                             <div class="last-check-in">August 29, 2025</div>
-                            <div class="days-since">56 days ago</div>
+                            <span class="days-badge">60 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
@@ -250,15 +254,15 @@
                     </div>
                 </div>
 
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Joshua</div>
-                            <div class="startup-name">CRAM</div>
+                <div class="team-card">
+                    <div class="team-header">
+                        <div class="team-info">
+                            <div class="team-name">CRAM</div>
+                            <div class="team-members">Joshua</div>
                         </div>
                         <div class="check-in-info">
                             <div class="last-check-in">August 30, 2025</div>
-                            <div class="days-since">55 days ago</div>
+                            <span class="days-badge">60 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
@@ -271,15 +275,15 @@
             <div class="priority-section high">
                 <div class="priority-header priority-high">⚠️ High Priority (30-59 Days)</div>
 
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Wayne</div>
-                            <div class="startup-name">Protocol Grip Trainer</div>
+                <div class="team-card">
+                    <div class="team-header">
+                        <div class="team-info">
+                            <div class="team-name">Protocol Grip Trainer</div>
+                            <div class="team-members">Wayne</div>
                         </div>
                         <div class="check-in-info">
                             <div class="last-check-in">September 4, 2025</div>
-                            <div class="days-since">50 days ago</div>
+                            <span class="days-badge">54 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
@@ -287,15 +291,15 @@
                     </div>
                 </div>
 
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">HerHealthAI Founder</div>
-                            <div class="startup-name">Her Health AI</div>
+                <div class="team-card">
+                    <div class="team-header">
+                        <div class="team-info">
+                            <div class="team-name">Her Health AI</div>
+                            <div class="team-members">Founder</div>
                         </div>
                         <div class="check-in-info">
                             <div class="last-check-in">September 12, 2025</div>
-                            <div class="days-since">42 days ago</div>
+                            <span class="days-badge">46 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
@@ -303,31 +307,31 @@
                     </div>
                 </div>
 
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Sanchit</div>
-                            <div class="startup-name">Redtrieve</div>
+                <div class="team-card">
+                    <div class="team-header">
+                        <div class="team-info">
+                            <div class="team-name">Redtrieve</div>
+                            <div class="team-members">Jai, Sanchit</div>
                         </div>
                         <div class="check-in-info">
                             <div class="last-check-in">September 12, 2025</div>
-                            <div class="days-since">42 days ago</div>
+                            <span class="days-badge">46 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Delivered Phase 1 real estate website for Australian client. Building AI agent automation. High energy from positive client feedback. Needs validation for broader market fit.
+                        <span class="status-label">Last Status:</span> Sanchit delivered Phase 1 real estate website for Australian client, building AI agent automation. Jai secured two paying clients (AUD 1500, AUD 5000). Team pivoting to automate frontend development. High morale from client acquisition success.
                     </div>
                 </div>
 
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Sandy</div>
-                            <div class="startup-name">UniExchange</div>
+                <div class="team-card">
+                    <div class="team-header">
+                        <div class="team-info">
+                            <div class="team-name">UniExchange</div>
+                            <div class="team-members">Sandy</div>
                         </div>
                         <div class="check-in-info">
                             <div class="last-check-in">September 19, 2025</div>
-                            <div class="days-since">35 days ago</div>
+                            <span class="days-badge">39 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
@@ -335,15 +339,15 @@
                     </div>
                 </div>
 
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Robert</div>
-                            <div class="startup-name">Academic Advisor AI</div>
+                <div class="team-card">
+                    <div class="team-header">
+                        <div class="team-info">
+                            <div class="team-name">Academic Advisor.AI</div>
+                            <div class="team-members">Robert</div>
                         </div>
                         <div class="check-in-info">
                             <div class="last-check-in">September 19, 2025</div>
-                            <div class="days-since">35 days ago</div>
+                            <span class="days-badge">39 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
@@ -351,51 +355,19 @@
                     </div>
                 </div>
 
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Sky</div>
-                            <div class="startup-name">SipSecure</div>
+                <div class="team-card">
+                    <div class="team-header">
+                        <div class="team-info">
+                            <div class="team-name">SipSecure</div>
+                            <div class="team-members">Sky</div>
                         </div>
                         <div class="check-in-info">
                             <div class="last-check-in">September 19, 2025</div>
-                            <div class="days-since">35 days ago</div>
+                            <span class="days-badge">39 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
                         <span class="status-label">Last Status:</span> Production of preorders started, fixed design flaw. Brewery validation for branded lids. Patent progress. Blockers: 3D printer inconsistency. High energy but non-responsive since Sept 19.
-                    </div>
-                </div>
-
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Stacey</div>
-                            <div class="startup-name">Nourish (kelpii)</div>
-                        </div>
-                        <div class="check-in-info">
-                            <div class="last-check-in">September 20, 2025</div>
-                            <div class="days-since">34 days ago</div>
-                        </div>
-                    </div>
-                    <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Strong resilience after partnership dissolution. Product reformulation focus. Supply delays until Oct 6. Positive approach to challenges. Demonstrated clear communication during transition.
-                    </div>
-                </div>
-
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Gavin</div>
-                            <div class="startup-name">Connect Alt</div>
-                        </div>
-                        <div class="check-in-info">
-                            <div class="last-check-in">September 22, 2025</div>
-                            <div class="days-since">32 days ago</div>
-                        </div>
-                    </div>
-                    <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Website migration complete, 50% newsletter open rate. Secured 40 student ambassadors. Struggles with user acquisition and social media consistency. Needs systematic marketing approach.
                     </div>
                 </div>
             </div>
@@ -404,31 +376,15 @@
             <div class="priority-section moderate">
                 <div class="priority-header priority-moderate">📋 Moderate Priority (7-29 Days)</div>
 
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Jai</div>
-                            <div class="startup-name">Redtrieve</div>
-                        </div>
-                        <div class="check-in-info">
-                            <div class="last-check-in">September 24, 2025</div>
-                            <div class="days-since">30 days ago</div>
-                        </div>
-                    </div>
-                    <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Two paying clients secured (AUD 1500, AUD 5000). Strategic pivot to automate frontend development. High morale from successful client acquisition. Next: 5 new commitments for streamlined offering.
-                    </div>
-                </div>
-
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Nick</div>
-                            <div class="startup-name">Preferred Valet Parking</div>
+                <div class="team-card">
+                    <div class="team-header">
+                        <div class="team-info">
+                            <div class="team-name">Preferred Valet Parking</div>
+                            <div class="team-members">Nick</div>
                         </div>
                         <div class="check-in-info">
                             <div class="last-check-in">September 26, 2025</div>
-                            <div class="days-since">28 days ago</div>
+                            <span class="days-badge">32 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
@@ -436,15 +392,15 @@
                     </div>
                 </div>
 
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Her Sports Team</div>
-                            <div class="startup-name">Her Sports San Diego</div>
+                <div class="team-card">
+                    <div class="team-header">
+                        <div class="team-info">
+                            <div class="team-name">Her Sports San Diego</div>
+                            <div class="team-members">Team</div>
                         </div>
                         <div class="check-in-info">
                             <div class="last-check-in">October 1, 2025</div>
-                            <div class="days-since">23 days ago</div>
+                            <span class="days-badge">27 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
@@ -452,15 +408,15 @@
                     </div>
                 </div>
 
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Sammie</div>
-                            <div class="startup-name">Foot Kinetics</div>
+                <div class="team-card">
+                    <div class="team-header">
+                        <div class="team-info">
+                            <div class="team-name">Foot Kinetics</div>
+                            <div class="team-members">Sammie</div>
                         </div>
                         <div class="check-in-info">
                             <div class="last-check-in">October 6, 2025</div>
-                            <div class="days-since">18 days ago</div>
+                            <span class="days-badge">22 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
@@ -468,35 +424,19 @@
                     </div>
                 </div>
 
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Daniel</div>
-                            <div class="startup-name">Wayvlo</div>
+                <div class="team-card">
+                    <div class="team-header">
+                        <div class="team-info">
+                            <div class="team-name">Wayvlo</div>
+                            <div class="team-members">Daniel</div>
                         </div>
                         <div class="check-in-info">
                             <div class="last-check-in">October 10, 2025</div>
-                            <div class="days-since">14 days ago</div>
+                            <span class="days-badge">18 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
                         <span class="status-label">Last Status:</span> User research with club sports/fraternities. Narrowed focus to club tennis. Running Neal Test (manual service delivery + payment) by Oct 14. Moderate morale - adapting strategy after initial roadblocks.
-                    </div>
-                </div>
-
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Kavindi</div>
-                            <div class="startup-name">Foodie (ReadyPlan)</div>
-                        </div>
-                        <div class="check-in-info">
-                            <div class="last-check-in">October 11, 2025</div>
-                            <div class="days-since">13 days ago</div>
-                        </div>
-                    </div>
-                    <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Strong validation (20/24 confirmed interest). Pivoted to polling/ranking tool. High energy, executing validation consistently. Next: 3 Neal Tests by Oct 18. Completed 50+ customer interviews.
                     </div>
                 </div>
             </div>
@@ -504,7 +444,7 @@
 
         <div class="footer">
             Generated by LaunchMate Check-In Alert System | For Jordyn (Community Manager)<br>
-            Tracking founders from the 19 official ZIP Launchpad teams with 7+ days since last LaunchMate activity
+            Tracking the 19 official ZIP Launchpad teams with 7+ days since last LaunchMate activity
         </div>
     </div>
 </body>
