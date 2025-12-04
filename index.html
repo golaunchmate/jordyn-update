@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Check-In Alerts - Jordyn's Follow-Up List</title>
+    <title>Check-In Alerts - Jordyn's Follow-Up Dashboard</title>
     <style>
         * {
             margin: 0;
@@ -44,10 +44,12 @@
             padding: 20px 30px;
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
             border-bottom: 3px solid #5473C6;
         }
         .stat-item {
             text-align: center;
+            margin: 10px;
         }
         .stat-number {
             font-size: 28px;
@@ -112,7 +114,6 @@
             justify-content: space-between;
             align-items: center;
             padding: 12px 15px;
-            cursor: pointer;
         }
         .founder-info {
             flex: 1;
@@ -179,20 +180,20 @@
     <div class="container">
         <div class="header">
             <h1>🔔 Check-In Alert System</h1>
-            <div class="subtitle">Founders who haven't used LaunchMate in 7+ days | Updated October 28, 2025</div>
+            <div class="subtitle">Founders who haven't used LaunchMate in 7+ days | Updated December 3, 2025</div>
         </div>
 
         <div class="stats-bar">
             <div class="stat-item">
-                <div class="stat-number">17</div>
+                <div class="stat-number">16</div>
                 <div class="stat-label">Need Follow-Up</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">4</div>
+                <div class="stat-number">5</div>
                 <div class="stat-label">Critical (60+ days)</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">7</div>
+                <div class="stat-number">5</div>
                 <div class="stat-label">High Priority (30-59 days)</div>
             </div>
             <div class="stat-item">
@@ -209,48 +210,16 @@
                 <div class="founder-card">
                     <div class="founder-header">
                         <div class="founder-info">
-                            <div class="founder-name">Daniel</div>
-                            <div class="startup-name">Second Course</div>
-                        </div>
-                        <div class="check-in-info">
-                            <div class="last-check-in">July 29, 2025</div>
-                            <span class="days-badge">91 days</span>
-                        </div>
-                    </div>
-                    <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Built prototype, conducting stakeholder validation with students/restaurants. Was preparing beta testing with ZIP students. Needs university partnership guidance and campus food service connections.
-                    </div>
-                </div>
-
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Thaddeus</div>
-                            <div class="startup-name">The T-Squeeze</div>
-                        </div>
-                        <div class="check-in-info">
-                            <div class="last-check-in">August 29, 2025</div>
-                            <span class="days-badge">60 days</span>
-                        </div>
-                    </div>
-                    <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Partnership structure clarified with Holland. Focused on prototype funding but needs guidance on user validation before building. Positive and proactive energy.
-                    </div>
-                </div>
-
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Kanna</div>
+                            <div class="founder-name">Rachel</div>
                             <div class="startup-name">ASAICHI</div>
                         </div>
                         <div class="check-in-info">
                             <div class="last-check-in">August 29, 2025</div>
-                            <span class="days-badge">60 days</span>
+                            <span class="days-badge">96 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Won 1st place in ZIP cohort review. Working on sustainable flower base prototyping. Needs connections for manufacturing partnerships and supply chain development.
+                        <span class="status-label">Last Status:</span> Won 1st place at ZIP review panel, then went silent. Likely stuck on manufacturing partnerships or prototype finalization. URGENT: Needs warm check-in and manufacturing expert connection.
                     </div>
                 </div>
 
@@ -262,18 +231,13 @@
                         </div>
                         <div class="check-in-info">
                             <div class="last-check-in">August 30, 2025</div>
-                            <span class="days-badge">59 days</span>
+                            <span class="days-badge">95 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Rebuilding Cram AI after user retention issues. Needs structured check-ins and help prioritizing resources. Uncertain about technical development vs. user validation focus.
+                        <span class="status-label">Last Status:</span> Started check-in but interrupted - rebuilding Cram AI after retention issues. Needs structured check-in and help transitioning from planning to execution with users.
                     </div>
                 </div>
-            </div>
-
-            <!-- HIGH: 30-59 days -->
-            <div class="priority-section high">
-                <div class="priority-header priority-high">⚠️ High Priority (30-59 Days)</div>
 
                 <div class="founder-card">
                     <div class="founder-header">
@@ -283,27 +247,11 @@
                         </div>
                         <div class="check-in-info">
                             <div class="last-check-in">September 4, 2025</div>
-                            <span class="days-badge">54 days</span>
+                            <span class="days-badge">90 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Strong momentum - mailed devices to team members, connecting with Sammie for manufacturing insights. Needs guidance on hardware startup team building and production scaling.
-                    </div>
-                </div>
-
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">HerHealthAI Founder</div>
-                            <div class="startup-name">Her Health AI</div>
-                        </div>
-                        <div class="check-in-info">
-                            <div class="last-check-in">September 12, 2025</div>
-                            <span class="days-badge">46 days</span>
-                        </div>
-                    </div>
-                    <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Actively avoiding user validation despite expressing passion for PCOD/PCOS problem. Primary blocker is internal resistance to action. No specific support needed - internal challenge.
+                        <span class="status-label">Last Status:</span> Strong momentum - mailed devices to team members, started printing process. Connected with Sammie for manufacturing insights. Needs re-engagement check-in.
                     </div>
                 </div>
 
@@ -315,59 +263,11 @@
                         </div>
                         <div class="check-in-info">
                             <div class="last-check-in">September 12, 2025</div>
-                            <span class="days-badge">46 days</span>
+                            <span class="days-badge">82 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Delivered Phase 1 real estate website for Australian client. Building AI agent automation. High energy from positive client feedback. Needs validation for broader market fit.
-                    </div>
-                </div>
-
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Gavin</div>
-                            <div class="startup-name">Second Course</div>
-                        </div>
-                        <div class="check-in-info">
-                            <div class="last-check-in">September 17, 2025</div>
-                            <span class="days-badge">41 days</span>
-                        </div>
-                    </div>
-                    <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Secured 40 student ambassadors through SDSU workshop. Working on website refinements and restaurant partnerships. Needs to shift from internal building to direct user validation with food-insecure students.
-                    </div>
-                </div>
-
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Sandy</div>
-                            <div class="startup-name">UniExchange</div>
-                        </div>
-                        <div class="check-in-info">
-                            <div class="last-check-in">September 19, 2025</div>
-                            <span class="days-badge">39 days</span>
-                        </div>
-                    </div>
-                    <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Strong momentum - viral TikTok success (71k, 67k views), drove 100 users in 24 hours. Proven acquisition channel. Could benefit from guidance on content systematization and retention measurement.
-                    </div>
-                </div>
-
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Robert</div>
-                            <div class="startup-name">Academic Advisor AI</div>
-                        </div>
-                        <div class="check-in-info">
-                            <div class="last-check-in">September 19, 2025</div>
-                            <span class="days-badge">39 days</span>
-                        </div>
-                    </div>
-                    <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Custom AI counselor built, C-Corp filed, SDSU article published. Next: Oct 2 Assistant Dean hand-off. Needs EdTech regulatory guidance and campus testing support.
+                        <span class="status-label">Last Status:</span> Delivered Phase 1 real estate website for Australian client. Building AI agent automation. High energy from positive client feedback but needs broader market validation.
                     </div>
                 </div>
 
@@ -379,80 +279,48 @@
                         </div>
                         <div class="check-in-info">
                             <div class="last-check-in">September 19, 2025</div>
-                            <span class="days-badge">39 days</span>
+                            <span class="days-badge">75 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Production of preorders started, fixed design flaw. Brewery validation for branded lids. Patent progress. Blockers: 3D printer inconsistency. High energy but non-responsive since Sept 19.
+                        <span class="status-label">Last Status:</span> Production of preorders started, fixed design flaw. Brewery validation for branded lids. Patent progress. Blockers: 3D printer inconsistency. Was high energy but non-responsive since Sept 19.
                     </div>
                 </div>
             </div>
 
-            <!-- MODERATE: 7-29 days -->
-            <div class="priority-section moderate">
-                <div class="priority-header priority-moderate">📋 Moderate Priority (7-29 Days)</div>
+            <!-- HIGH: 30-59 days -->
+            <div class="priority-section high">
+                <div class="priority-header priority-high">⚠️ High Priority (30-59 Days)</div>
 
                 <div class="founder-card">
                     <div class="founder-header">
                         <div class="founder-info">
-                            <div class="founder-name">Jai</div>
-                            <div class="startup-name">Redtrieve</div>
+                            <div class="founder-name">Kanna</div>
+                            <div class="startup-name">ASAICHI</div>
                         </div>
                         <div class="check-in-info">
-                            <div class="last-check-in">September 24, 2025</div>
-                            <span class="days-badge">34 days</span>
+                            <div class="last-check-in">September 22, 2025</div>
+                            <span class="days-badge">72 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Two paying clients secured (AUD 1500, AUD 5000). Strategic pivot to automate frontend development. High morale from successful client acquisition. Next: 5 new commitments for streamlined offering.
+                        <span class="status-label">Last Status:</span> Won WBENC 2nd place ($3,000), collected 60+ business cards. Geltech collaboration for prototype testing. Needs help systematizing follow-up strategy with contacts.
                     </div>
                 </div>
 
                 <div class="founder-card">
                     <div class="founder-header">
                         <div class="founder-info">
-                            <div class="founder-name">Nick</div>
-                            <div class="startup-name">Preferred Valet Parking</div>
+                            <div class="founder-name">Connect Alt Founder</div>
+                            <div class="startup-name">Connect Alt</div>
                         </div>
                         <div class="check-in-info">
-                            <div class="last-check-in">September 26, 2025</div>
-                            <span class="days-badge">32 days</span>
+                            <div class="last-check-in">September 22, 2025</div>
+                            <span class="days-badge">72 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Breakthrough traction with SDSU Athletics Department. Alumni Center event in 2 weeks. Needs execution details confirmation and trial popup coordination support at Advisory Board meeting.
-                    </div>
-                </div>
-
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Her Sports Team</div>
-                            <div class="startup-name">Her Sports San Diego</div>
-                        </div>
-                        <div class="check-in-info">
-                            <div class="last-check-in">October 1, 2025</div>
-                            <span class="days-badge">27 days</span>
-                        </div>
-                    </div>
-                    <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Very high energy - evolved from content creation to revenue testing. University collaborations, athlete interviews, secured 2 contributors. Testing preorders, merchandise, multiple revenue streams. 6500 email list built.
-                    </div>
-                </div>
-
-                <div class="founder-card">
-                    <div class="founder-header">
-                        <div class="founder-info">
-                            <div class="founder-name">Sammie</div>
-                            <div class="startup-name">Foot Kinetics</div>
-                        </div>
-                        <div class="check-in-info">
-                            <div class="last-check-in">October 6, 2025</div>
-                            <span class="days-badge">22 days</span>
-                        </div>
-                    </div>
-                    <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Manufacturing contract signed, Outdoor Media Summit prep (Oct 27-29). Systematic business execution. Could benefit from operations/supply chain domain expert office hours.
+                        <span class="status-label">Last Status:</span> Completed website migration, user acquisition plateau (Facebook groups dropped from 5-10 to 2 subscribers). Needs marketing strategy framework and user growth tactics.
                     </div>
                 </div>
 
@@ -464,27 +332,144 @@
                         </div>
                         <div class="check-in-info">
                             <div class="last-check-in">October 10, 2025</div>
-                            <span class="days-badge">18 days</span>
+                            <span class="days-badge">54 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
-                        <span class="status-label">Last Status:</span> User research with club sports/fraternities. Narrowed focus to club tennis. Running Neal Test (manual service delivery + payment) by Oct 14. Moderate morale - adapting strategy after initial roadblocks.
+                        <span class="status-label">Last Status:</span> Pivoted to club tennis, planned Neal Test for Oct 14. CRITICAL: 54 days inactive, missed Neal Test commitment - needs immediate check-in to assess status.
                     </div>
                 </div>
 
                 <div class="founder-card">
                     <div class="founder-header">
                         <div class="founder-info">
-                            <div class="founder-name">Kavindi</div>
-                            <div class="startup-name">ReadyPlan (now Foodie)</div>
+                            <div class="founder-name">Jai</div>
+                            <div class="startup-name">Redtrieve</div>
                         </div>
                         <div class="check-in-info">
-                            <div class="last-check-in">October 11, 2025</div>
-                            <span class="days-badge">17 days</span>
+                            <div class="last-check-in">October 17, 2025</div>
+                            <span class="days-badge">47 days</span>
                         </div>
                     </div>
                     <div class="status-summary">
-                        <span class="status-label">Last Status:</span> Strong validation - 20/24 people confirmed problem. Pivoted to polling/ranking tool with restaurant discovery. Running 3 Neal Tests by Oct 18. Very high energy with clear next experiments.
+                        <span class="status-label">Last Status:</span> Two paying clients secured (AUD 1500, AUD 5000). Strategic pivot to automate frontend development. 47-day silence after validated PMF - needs immediate re-engagement.
+                    </div>
+                </div>
+
+                <div class="founder-card">
+                    <div class="founder-header">
+                        <div class="founder-info">
+                            <div class="founder-name">Her Sports Team</div>
+                            <div class="startup-name">Her Sports San Diego</div>
+                        </div>
+                        <div class="check-in-info">
+                            <div class="last-check-in">October 30, 2025</div>
+                            <span class="days-badge">34 days</span>
+                        </div>
+                    </div>
+                    <div class="status-summary">
+                        <span class="status-label">Last Status:</span> E-commerce launched, podcast developed, 6500 subscribers. Multiple revenue streams active, 2 interns onboarded. Strong momentum but 34-day gap - check-in recommended.
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODERATE: 7-29 days -->
+            <div class="priority-section moderate">
+                <div class="priority-header priority-moderate">📋 Moderate Priority (7-29 Days)</div>
+
+                <div class="founder-card">
+                    <div class="founder-header">
+                        <div class="founder-info">
+                            <div class="founder-name">Nick</div>
+                            <div class="startup-name">University Valet</div>
+                        </div>
+                        <div class="check-in-info">
+                            <div class="last-check-in">November 14, 2025</div>
+                            <span class="days-badge">19 days</span>
+                        </div>
+                    </div>
+                    <div class="status-summary">
+                        <span class="status-label">Last Status:</span> First event success (Oct 31), December 8 event confirmed. 21 pre-sales ($105), PATS partnership developing. Strong momentum - routine check-in.
+                    </div>
+                </div>
+
+                <div class="founder-card">
+                    <div class="founder-header">
+                        <div class="founder-info">
+                            <div class="founder-name">Gavin</div>
+                            <div class="startup-name">Second Course</div>
+                        </div>
+                        <div class="check-in-info">
+                            <div class="last-check-in">November 20, 2025</div>
+                            <span class="days-badge">13 days</span>
+                        </div>
+                    </div>
+                    <div class="status-summary">
+                        <span class="status-label">Last Status:</span> Neal Test with eLeetCoders (4 students in 15 min), 120+ GroupMe members. App Store approval status unclear - needs update on progress.
+                    </div>
+                </div>
+
+                <div class="founder-card">
+                    <div class="founder-header">
+                        <div class="founder-info">
+                            <div class="founder-name">Holland</div>
+                            <div class="startup-name">The T-Squeeze</div>
+                        </div>
+                        <div class="check-in-info">
+                            <div class="last-check-in">November 21, 2025</div>
+                            <span class="days-badge">12 days</span>
+                        </div>
+                    </div>
+                    <div class="status-summary">
+                        <span class="status-label">Last Status:</span> 6 paying customers, 2 verbal commitments at ZIP board meeting. Intern onboarded. 12-day silence after mentor feedback - check verbal commitment conversion.
+                    </div>
+                </div>
+
+                <div class="founder-card">
+                    <div class="founder-header">
+                        <div class="founder-info">
+                            <div class="founder-name">Robert</div>
+                            <div class="startup-name">Academic Advisor AI</div>
+                        </div>
+                        <div class="check-in-info">
+                            <div class="last-check-in">November 21, 2025</div>
+                            <span class="days-badge">12 days</span>
+                        </div>
+                    </div>
+                    <div class="status-summary">
+                        <span class="status-label">Last Status:</span> AWS deployment live, SDSU validation secured. CRITICAL DEADLINE: Dec 11 Dean presentation. Hiring backend specialist for parsing accuracy - strong momentum.
+                    </div>
+                </div>
+
+                <div class="founder-card">
+                    <div class="founder-header">
+                        <div class="founder-info">
+                            <div class="founder-name">HerHealthAI Founder</div>
+                            <div class="startup-name">HerHealthAI</div>
+                        </div>
+                        <div class="check-in-info">
+                            <div class="last-check-in">November 21, 2025</div>
+                            <span class="days-badge">12 days</span>
+                        </div>
+                    </div>
+                    <div class="status-summary">
+                        <span class="status-label">Last Status:</span> 1 paying customer, thesis defense Dec 2. CRITICAL WINDOW: Dec 3-20 to get customers 2-5. Pattern: building-before-validating needs intervention.
+                    </div>
+                </div>
+
+                <div class="founder-card">
+                    <div class="founder-header">
+                        <div class="founder-info">
+                            <div class="founder-name">Stacey</div>
+                            <div class="startup-name">Nourish (kelpii)</div>
+                        </div>
+                        <div class="check-in-info">
+                            <div class="last-check-in">November 21, 2025</div>
+                            <span class="days-badge">12 days</span>
+                        </div>
+                    </div>
+                    <div class="status-summary">
+                        <span class="status-label">Last Status:</span> Waiting on critical validation feedback from 4 customers who received reformulated Daily Vital. Needs $6,000 for production capital. Check-in to assess feedback results.
                     </div>
                 </div>
             </div>
@@ -492,7 +477,8 @@
 
         <div class="footer">
             Generated by LaunchMate Check-In Alert System | For Jordyn (Community Manager)<br>
-            Tracking founders from the 19 official ZIP Launchpad teams with 7+ days since last LaunchMate activity
+            Tracking founders from the 19 official ZIP Launchpad teams with 7+ days since last LaunchMate activity<br>
+            View at: <a href="https://golaunchmate.github.io/jordyn-update">golaunchmate.github.io/jordyn-update</a>
         </div>
     </div>
 </body>
